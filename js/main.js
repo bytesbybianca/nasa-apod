@@ -31,7 +31,6 @@ function getRandomDate(date1, date2){
     } return formattedDate
 }
 
-
 // get today's date
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -39,7 +38,6 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
 today = `${yyyy}-${mm}-${dd}`;
-
 
 // when user clicks on Get random, get random APOD
 document.querySelector('.random').addEventListener('click', function () {
@@ -50,7 +48,6 @@ document.querySelector('.random').addEventListener('click', function () {
     // clear user input date
     document.querySelector('input').value = ''
 })
-
 
 function logDate(date) {
     let url = `https://api.nasa.gov/planetary/apod?api_key=${api_key}i&date=${date}`
@@ -63,6 +60,7 @@ function logDate(date) {
     document.querySelector('button').addEventListener('click', function () {
         document.querySelector('.randomInfo').innerText = ''
     })
+
     // if provided with image, display as background
     if (data.media_type === 'image') {
     document.querySelector('.background').style.backgroundImage = `url('${data.url}')`;
@@ -81,7 +79,3 @@ function logDate(date) {
         console.log(`error ${err}`)
     });
 }
-
-
-
-

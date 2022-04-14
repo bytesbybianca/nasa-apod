@@ -8,4 +8,6 @@
 
 ✨ NASA's APOD API: https://github.com/nasa/apod-api
 
+🚀 If forking repo, be sure to grab your own API key here! https://api.nasa.gov/
+
 🌙 Check out the live site here: https://get-nasa-apod.netlify.app/

@@ -7,3 +7,5 @@
 🧩 View NASA's APOD either by selecting a date or clicking "Get random APOD"
 
 ✨ NASA's APOD API: https://github.com/nasa/apod-api
+
+🌙 Check out the live site here: https://get-nasa-apod.netlify.app/

@@ -50,7 +50,7 @@ document.querySelector('.random').addEventListener('click', function () {
 })
 
 function logDate(date) {
-    let url = `https://api.nasa.gov/planetary/apod?api_key=${nasa_apod_api_key}&date=${date}`
+    let url = `https://api.nasa.gov/planetary/apod?api_key=GCbxFQG0KUPeaPqrzB7d8Mb9JCSBWFgPtoN52Sqi&date=${date}`
     
     fetch(url)
     .then(res => res.json()) // parse response as JSON
